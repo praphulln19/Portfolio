@@ -41,7 +41,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="#home" className="text-2xl font-bold text-gradient">
-              {portfolioData.hero.name.split(' ')[0]}
+              PK
             </a>
           </div>
 

@@ -1,6 +1,6 @@
 export const portfolioData = {
   hero: {
-    name: "PK Kumar",
+    name: "Praphull Kumar",
     tagline: "AI/ML Developer | B.Tech CSE Student",
     summary: "Passionate about building intelligent systems and creating clean, modern web experiences. Specializing in deep learning, computer vision, and full-stack integration.",
     resumeLink: "#", // Add resume PDF path
