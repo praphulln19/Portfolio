@@ -7,6 +7,10 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 
+/**
+ * Main App component that serves as the root layout
+ * Provides theme context and renders all portfolio sections
+ */
 function App() {
   return (
     <ThemeProvider>

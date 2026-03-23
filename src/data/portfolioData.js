@@ -1,9 +1,12 @@
+/**
+ * Portfolio data object containing all information for the personal portfolio
+ */
 export const portfolioData = {
   hero: {
     name: "Praphull Kumar",
     tagline: "AI/ML Developer | B.Tech CSE Student",
     summary: "Passionate about building intelligent systems and creating clean, modern web experiences. Specializing in deep learning, computer vision, and full-stack integration.",
-    resumeLink: "#", // Add resume PDF path
+    resumeLink: "#",
   },
   about: {
     biography: "I am a driven Bachelor of Technology student majoring in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning. With an insatiable curiosity for solving complex problems, I craft modern applications that leverage machine learning algorithms to make an impact. My journey is characterized by continuous learning and pushing technical boundaries.",
@@ -66,7 +69,7 @@ export const portfolioData = {
     {
       title: "Member of Inter-College Kabaddi Team",
       description: "Represented the college at various sports meets, exhibiting teamwork, strategic thinking, and dedication.",
-      icon: "Activity" // Lucide icon name
+      icon: "Activity"
     }
   ],
   certifications: [

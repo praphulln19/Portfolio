@@ -2,9 +2,12 @@ import { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext();
 
+/**
+ * ThemeProvider component that manages light/dark theme state
+ * Persists theme preference to localStorage and applies to document root
+ */
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    // Check local storage or system preference on initial load
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
@@ -12,7 +15,7 @@ export const ThemeProvider = ({ children }) => {
       }
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
-    return 'dark'; // Default to dark mode for a modern dev feel
+    return 'dark';
   });
 
   useEffect(() => {
@@ -33,6 +36,11 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
+/**
+ * Hook to access theme context
+ * @throws {Error} If used outside of ThemeProvider
+ * @returns {Object} Theme object with theme state and toggleTheme function
+ */
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (context === undefined) {
