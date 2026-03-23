@@ -1,6 +1,6 @@
 export const portfolioData = {
   hero: {
-    name: "Praphull Kumar",
+    name: "PK Kumar",
     tagline: "AI/ML Developer | B.Tech CSE Student",
     summary: "Passionate about building intelligent systems and creating clean, modern web experiences. Specializing in deep learning, computer vision, and full-stack integration.",
     resumeLink: "#", // Add resume PDF path
@@ -39,7 +39,7 @@ export const portfolioData = {
       title: "Pneumonia Detection using CNN and ResNet",
       description: "A deep learning application utilizing transfer learning techniques to accurately classify chest X-rays. Designed to aid medical professionals with rapid preliminary screening.",
       technologies: ["Python", "TensorFlow", "Keras", "ResNet", "CNN"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/praphulln19/Pneumonia_Detection",
       liveUrl: "#",
       thumbnail: "https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=800&auto=format&fit=crop"
     },
@@ -48,7 +48,7 @@ export const portfolioData = {
       title: "Brain Tumor Detection using CNN",
       description: "Developed a convolutional neural network with advanced preprocessing and data augmentation to classify MRI scans seamlessly and reliably.",
       technologies: ["Python", "Deep Learning", "OpenCV", "CNN"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/praphulln19/Pneumonia_Detection",
       liveUrl: "#",
       thumbnail: "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=800&auto=format&fit=crop"
     },
@@ -57,7 +57,7 @@ export const portfolioData = {
       title: "Agentic Web Portfolio",
       description: "A highly dynamic, fully responsive personal portfolio designed with React and Tailwind CSS, featuring glassmorphism elements and smooth framing animations.",
       technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vite"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/praphulln19/Portfolio",
       liveUrl: "#",
       thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop"
     }

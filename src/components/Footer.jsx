@@ -11,7 +11,7 @@ const Footer = () => {
           
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <span className="text-2xl font-bold text-gradient block mb-2">
-              {portfolioData.hero.name}
+              Praphull Kumar
             </span>
             <p className="text-slate-500 dark:text-slate-400 max-w-sm">
               Building intelligent systems and clean web experiences.
