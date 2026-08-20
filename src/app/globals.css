@@ -74,11 +74,16 @@
   }
 
   .card-marquee-track {
-    animation: marquee 42s linear infinite;
+    animation: marquee 42s linear infinite reverse;
   }
 
   .card-marquee-track:hover {
     animation-play-state: paused;
+  }
+
+  .edge-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   }
 
   @keyframes marquee {

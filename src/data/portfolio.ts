@@ -127,7 +127,7 @@ export const projects: Project[] = [
     status: "Live",
     tech: ["JavaScript", "CSS", "PDF Export"],
     githubUrl: "https://github.com/praphulln19/Invoice-Generator",
-    liveUrl: "https://supraoninvoice.vercel.app",
+    liveUrl: "https://supraoninvoice.vercel.app/",
     visual: "invoice",
     screenshot: "/projects/invoice-generator.png",
     screenshotAspect: 1.481,

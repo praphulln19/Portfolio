@@ -78,7 +78,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative mt-20 overflow-hidden pb-4 sm:mt-28">
+      <div className="edge-fade relative mt-20 overflow-hidden pb-4 sm:mt-28">
         <div className="card-marquee-track flex w-max gap-4 sm:gap-5">
           {MARQUEE_PROJECTS.map((project, i) => (
             <SlideCard key={`${project.id}-${i}`} project={project} />
