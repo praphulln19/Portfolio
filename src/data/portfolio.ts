@@ -67,6 +67,8 @@ export type Project = {
   visual: "finance" | "glass" | "invoice" | "chat" | "scan";
   /** Real product screenshot path, when available. Falls back to the abstract `visual` art otherwise. */
   screenshot?: string;
+  /** width / height of the screenshot, used to size slide cards to their real shape. */
+  screenshotAspect?: number;
 };
 
 export const projects: Project[] = [
@@ -83,6 +85,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/praphulln19/FinPilot",
     visual: "finance",
     screenshot: "/projects/finpilot.png",
+    screenshotAspect: 2.106,
   },
   {
     id: "spendly",
@@ -98,6 +101,7 @@ export const projects: Project[] = [
     liveUrl: "https://spendly-bice-iota.vercel.app/",
     visual: "finance",
     screenshot: "/projects/spendly.png",
+    screenshotAspect: 1.437,
   },
   {
     id: "daybreak",
@@ -126,6 +130,7 @@ export const projects: Project[] = [
     liveUrl: "https://supraoninvoice.vercel.app",
     visual: "invoice",
     screenshot: "/projects/invoice-generator.png",
+    screenshotAspect: 1.481,
   },
   {
     id: "ai-chat-exporter",
@@ -140,6 +145,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/praphulln19/Ai-Chat-Exporter",
     visual: "chat",
     screenshot: "/projects/ai-chat-exporter.png",
+    screenshotAspect: 0.811,
   },
   {
     id: "pneumonia-detection",

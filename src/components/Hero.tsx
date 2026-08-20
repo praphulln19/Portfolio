@@ -3,9 +3,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { profile, projects } from "@/data/portfolio";
-import CoverflowCard from "./CoverflowCard";
+import SlideCard from "./SlideCard";
 
 const NAME_PARTS = profile.name.toUpperCase().split(" ");
+// Duplicated once so translateX(-50%) loops back to a visually identical frame.
+const MARQUEE_PROJECTS = [...projects, ...projects];
 
 export default function Hero() {
   return (
@@ -76,21 +78,11 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative mt-20 flex justify-center overflow-hidden px-6 pb-4 sm:mt-28">
-        <div className="flex gap-4 sm:gap-5" style={{ perspective: "1400px" }}>
-          {projects.map((project, i) => {
-            const center = (projects.length - 1) / 2;
-            const offset = i - center;
-            return (
-              <CoverflowCard
-                key={project.id}
-                project={project}
-                rotateY={offset * -16}
-                z={-Math.abs(offset) * 40}
-                delay={0.85 + i * 0.06}
-              />
-            );
-          })}
+      <div className="relative mt-20 overflow-hidden pb-4 sm:mt-28">
+        <div className="card-marquee-track flex w-max gap-4 sm:gap-5">
+          {MARQUEE_PROJECTS.map((project, i) => (
+            <SlideCard key={`${project.id}-${i}`} project={project} />
+          ))}
         </div>
       </div>
 

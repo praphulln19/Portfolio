@@ -73,6 +73,14 @@
     animation: marquee 22s linear infinite;
   }
 
+  .card-marquee-track {
+    animation: marquee 42s linear infinite;
+  }
+
+  .card-marquee-track:hover {
+    animation-play-state: paused;
+  }
+
   @keyframes marquee {
     from {
       transform: translateX(0);
